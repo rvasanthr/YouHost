@@ -1,0 +1,132 @@
+/* ********************************** UNIVERSAL RULES */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* *********************************** SPECIFIC RULES */
+  body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+  
+  /* ********************************** HEADER */
+  /* MAIN HEADER BRAND */
+  .main-header {
+    background-color: #2ddf5c;
+    width: 100%;
+    padding: 8px 16px;
+  }
+  
+  .main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* MAIN HEADER NAVIGATION */
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: 0vw;
+    width: calc(100% - 73px);
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+  
+  .main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+  }
+  
+  .main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+  }
+  
+  .main-nav__item a:hover,
+  .main-nav__item a:active {
+    color: #fff;
+    border-bottom: 5px solid #fff;
+  }
+  
+  .main-nav__item--cta a {
+    color: #fff;
+    background-color: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  .main-nav__item--cta a:hover,
+  .main-nav__item--cta a:active {
+    color: #ff1b68;
+    background-color: #fff;
+    border: none;
+  }
+
+/* ***************************************** MAIN SECTION */
+/* PLAN BUTTONS */
+.button{
+    background-color: #0e4f1f;
+    color: #fff;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+.button:hover,
+.button:active{
+    background-color: #fff;
+    color: #0e4f1f;
+  }
+  
+.button:focus{
+    outline: 3px solid #ff5454;
+  }
+
+/* ***************************************** FOOTER SECTION */
+.main-footer{
+    background-color: #000;
+    padding: 32px;
+    margin-top: 48px;
+  }
+  
+  .main-footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .main-footer li{
+    display: inline-block;
+    margin: 0 16px;
+  }
+  
+  .main-footer li>a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main-footer li>a:hover,
+  .main-footer li>a:active{
+    color: #ccc;
+  }
