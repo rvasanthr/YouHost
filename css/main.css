@@ -170,3 +170,71 @@ body {
 .plan .button:focus{
   outline: 2px solid #f7645e;
 }
+
+/* ***************************************** KEY FEATURES */
+#key-features{
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title{
+  color: #fff;
+  margin: 32px;
+}
+
+#key-features>ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#key-features>ul li{
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-feature__image{
+  background-color: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.key-feature__description{
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ***************************************** FOOTER SECTION */
+.main-footer{
+  background-color: #000;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer li{
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer li>a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer li>a:hover,
+.main-footer li>a:active{
+  color: #ccc;
+}
