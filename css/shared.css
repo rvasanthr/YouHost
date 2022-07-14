@@ -147,7 +147,8 @@ body {
   display: none;
   text-align: right;
   width: 0vw;
-  width: calc(100% - 88px);
+  /* width: calc(100% - 88px); */
+  width: calc(100% - 60px);
   margin: 0;
   padding: 0;
   vertical-align: middle;
@@ -162,7 +163,8 @@ body {
 .main-nav__item {
   display: inline-block;
   /* margin: 0 16px; */
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
+  margin-left: 1rem;
 }
 
 .main-nav__item a,
@@ -201,7 +203,8 @@ body {
 /* MEDIA QUERY */
 @media (min-width: 40rem){
   .main-header{
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
+    padding: 0.5rem 0 0.5rem 1rem;
   }
   .main-nav{
     display: inline-block;
@@ -242,6 +245,10 @@ body {
 }
 
 /* ***************************************** MAIN SECTION */
+main{
+  min-height: calc(100vh - 3rem - 8.1875rem);
+  margin-top: 3rem;
+}
 /* PLAN BUTTONS */
 .button{
   background-color: #0e4f1f;
@@ -300,6 +307,7 @@ body {
   .main-footer{
     margin-top: 3rem;
   }
+  
   .main-footer li{
     display: inline-block;
     margin: 0;

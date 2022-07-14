@@ -1,0 +1,110 @@
+/* **************************************** MAIN SECTION */
+main{
+    padding-top: 1rem;
+}
+
+/* FORM HEADING */
+.signup-title{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ff5454;
+    padding: 0 1rem;
+}
+
+/* FORM & FORM ELEMENTS*/
+.signup-form{
+    padding: 1rem;
+    outline: none;
+}
+
+.signup-form label{
+    font-weight: bold;
+}
+
+.signup-form label, 
+.signup-form input, 
+.signup-form select,
+.signup-form select>option{
+    display: block;
+    border-radius: .25rem;
+    /* margin-top: 1rem; */
+    width: 100%;
+}
+
+.signup-form select>option:hover,
+.signup-form select>option:focus{
+    background-color: #2ddf5c;
+}
+
+.signup-form label{
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.signup-form select,
+.signup-form select>option,
+.signup-form input:not([type="checkbox"]){
+    border: 2px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+    /* font-weight: bold; */
+}
+
+.signup-form select:hover,
+.signup-form input:hover,
+.signup-form input:focus{
+    border: 2px solid #2ddf5c;
+}
+
+.signup-form select:focus,
+.signup-form input:focus{
+    /* outline: 2px solid #2ddf5c; */
+    outline: none;
+    background-color: #e8f0ea;
+}
+
+/* .signup-form input[type="checkbox"], */
+.signup-form input[id *= "terms"],
+.signup-form input[id *= "terms"] + label{
+    display: inline-block;
+    width: auto;
+}
+
+.signup-form input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: 0;
+    vertical-align:sub;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.signup-form input[type="checkbox"]:hover{
+    background-color: #909792;
+    border: #000;
+}
+
+.signup-form input[type="checkbox"]:checked{
+    background-color: #2ddf5c;
+    border: #0e4f1f;
+}
+
+.signup-form button[type="submit"]{
+    display: block;
+    margin-top: 1rem;
+}
+
+.signup-form button[disabled]{
+    cursor: not-allowed;
+}
+
+@media (min-width: 40rem){
+    .signup-form{
+        margin: auto;
+        width: 25rem;
+    }
+}
