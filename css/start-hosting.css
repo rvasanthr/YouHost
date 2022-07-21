@@ -103,6 +103,10 @@ main{
 }
 
 @media (min-width: 40rem){
+    main{
+        padding-top: 1.5rem;
+    }
+
     .signup-form{
         margin: auto;
         width: 25rem;
