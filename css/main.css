@@ -17,6 +17,7 @@
   background-position: center/cover;
   padding: 0.625rem;
   position: relative;
+  margin-top: -0.48rem;
 }
 
 #product-overview h1 {
@@ -35,7 +36,8 @@
   #product-overview{
     height: 60vh;
     background-position: left 15% bottom 71%;
-    margin-top: 3.5rem;
+    /* margin-top: 3.5rem; */
+    margin-top: 0;
   }
 
   #product-overview h1{
@@ -156,7 +158,6 @@
 /* ***************************************** KEY FEATURES */
 #key-features{
   background-color: #ff1b68;
-  /* padding: 1rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -217,5 +218,9 @@
   #key-features li{
     margin: 0;
     width: 30%;
+  }
+
+  .main-footer{
+    margin-top: 5rem;
   }
 }

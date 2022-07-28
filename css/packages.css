@@ -16,13 +16,11 @@
 
 /* MAIN CONTENT */
 .packages-main{
-    padding-top: 2rem;
     margin: 3rem 0 3.6rem;
 }
 
 /* PACKAGES */
 .package{
-    /* margin: 16px 0; */
     margin: 1.5rem 0;
     width: 80%;
     border: 4px solid #0e4f1f;
@@ -99,7 +97,7 @@
 
 @media (min-width: 40rem){
     .packages-main{
-        margin: 3rem auto 3.6rem;
+        margin: 3rem auto;
         max-width: 1500px;
     }
 

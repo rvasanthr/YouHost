@@ -1,6 +1,7 @@
 /* **************************************** MAIN SECTION */
 main{
     padding-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* FORM HEADING */
@@ -15,6 +16,10 @@ main{
 .signup-form{
     padding: 1rem;
     outline: none;
+    display: grid;
+    grid-auto-rows: minmax(2rem, auto);
+    align-items: flex-end;
+    row-gap: 0.5rem;
 }
 
 .signup-form label{
@@ -27,7 +32,6 @@ main{
 .signup-form select>option{
     display: block;
     border-radius: .25rem;
-    /* margin-top: 1rem; */
     width: 100%;
 }
 
@@ -36,18 +40,12 @@ main{
     background-color: #2ddf5c;
 }
 
-.signup-form label{
-    margin-top: 1.25rem;
-    margin-bottom: 0.25rem;
-}
-
 .signup-form select,
 .signup-form select>option,
 .signup-form input:not([type="checkbox"]){
     border: 2px solid #ccc;
     padding: 0.2rem 0.5rem;
     font: inherit;
-    /* font-weight: bold; */
 }
 
 .signup-form select:hover,
@@ -58,9 +56,12 @@ main{
 
 .signup-form select:focus,
 .signup-form input:focus{
-    /* outline: 2px solid #2ddf5c; */
     outline: none;
     background-color: #e8f0ea;
+}
+
+.signup-form__checkbox{
+    padding-top: 0.75rem;
 }
 
 /* .signup-form input[type="checkbox"], */
@@ -75,27 +76,32 @@ main{
     -moz-appearance: none;
     appearance: none;
     margin-left: 0;
-    vertical-align:sub;
     border: 2px solid #ccc;
     background-color: #fff;
     border-radius: 50%;
     width: 1.2rem;
     height: 1.2rem;
+    display: inline-block;
 }
 
 .signup-form input[type="checkbox"]:hover{
-    background-color: #909792;
-    border: #000;
+    border: 2px solid #2ddf5c;
+    background-color: #e8f0ea;
 }
 
 .signup-form input[type="checkbox"]:checked{
     background-color: #2ddf5c;
-    border: #0e4f1f;
+    border: 2px solid #0e4f1f;
+}
+
+.signup-form input[type="checkbox"]+label{
+    display: inline-block;
+    vertical-align: super;
 }
 
 .signup-form button[type="submit"]{
     display: block;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .signup-form button[disabled]{
@@ -108,7 +114,25 @@ main{
     }
 
     .signup-form{
-        margin: auto;
-        width: 25rem;
+        margin: auto auto 2rem;
+        width: 30rem;
+        grid-template-columns: 10rem auto;
+        grid-auto-rows: minmax(2rem, auto);
+        column-gap: 0.5rem;
+        row-gap: 2rem;
+        align-items: center;
+    }
+
+    .signup-form__checkbox{
+        padding-top: 0;
+        grid-column: span 2;
+    }
+
+    .signup-form button[type="submit"]{
+        margin: 0;
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+        width: fit-content;
+        padding: 0.7rem 2rem;
     }
 }
