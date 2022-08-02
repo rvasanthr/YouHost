@@ -42,6 +42,26 @@ main>div{
     vertical-align: top;    
   }
 
+  /* CUSTOMER IMAGE ANIMATION */
+  .testimonial__image:hover{
+    cursor: pointer;
+    animation: scale-image 1s ease-out 0s 1 normal none;
+  }
+
+  @keyframes scale-image{
+    from{
+      transform: scale(1);
+    }
+
+    51%{
+      transform: scale(1.025);
+    }
+
+    to{
+      transform: scale(1);
+    }
+  }
+
   .testimonial__info {
     padding: .875rem;
   }

@@ -30,6 +30,7 @@ body {
 /* ********************************** BACKDROP */
 .backdrop{
   display: none;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,32 +38,38 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
+  transition: opacity 300ms linear;
 }
 
 /* ******************************************* MODAL SECTION*/
 .modal{
-  align-items: center;
+  text-align: center;
   position: fixed;
   display: none;
+  opacity: 0;
+  transform: translateY(-20rem);
+  transform-origin: center;
+  transition: opacity 700ms ease-in, transform 700ms ease-out;
+  /* transition: display ease-in, opacity 200ms ease-in 200ms, transform 300ms ease-out 200ms; */
   z-index: 200;
   top: 20%;
-  left: 31%;
-  width: 37vw;
-  height: 25vh;
+  left: 35%;
+  /* width: 40%; */
   background: white;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid#ccc;
-  margin: .5rem;
+  /* margin: .5rem; */
+  /* margin: 0 auto; */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .modal__title{
   text-align: center;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 .modal__actions{
-  margin-top: 3.5rem;
+  /* margin-top: 3.5rem; */
   text-align: center;
 }
 
@@ -205,6 +212,13 @@ body {
     margin: 0 1rem;
   }
 
+  /* ANIMATION */
+  .main-nav__item--cta{
+    /* animation: grab-attention 300ms linear 2.5s infinite alternate none; */
+    animation: bounce 650ms ease-in 2.5s infinite alternate backwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+
   .main-nav__item--cta a,
   .mobile-nav__item--cta a {
   padding: 0.5rem 1rem;
@@ -218,6 +232,7 @@ body {
 /* MOBILE NAVIGATION SECTION */
 .mobile-nav{
   display: none;
+  opacity: 0;
   position: fixed;
   z-index: 101;
   top: 0;
@@ -225,6 +240,8 @@ body {
   background-color: #fff;
   width: 70vw;
   height: 100vh;
+  transform: translateX(-10rem);
+  transition: opacity 600ms ease-in-out, transform 600ms ease-in-out;
 }
 
 .mobile-nav__items{
@@ -333,4 +350,35 @@ main{
 /* FOR JAVASCRIPT USAGE*/
 .open{
   display: block !important;
+  opacity: 1 !important;
+  transform: translateX(0) translateY(0) !important;
+}
+
+/* ANIMATIONS */
+@keyframes grab-attention{
+  from{
+    transform: scale(1.05);
+  }
+
+  50%{
+    transform: scale(0.97);
+  }
+
+  to{
+    transform: scale(0.93);
+  }
+}
+
+@keyframes bounce{
+  from{
+    transform: translateY(-0.1rem);
+  }
+
+  50%{
+    transform: translateY(0rem);
+  }
+
+  to{
+    transform: translateY(0.57rem);
+  }
 }
