@@ -15,7 +15,7 @@ function openModal() {
     setTimeout(function () {
         modal.classList.add('open');
         backdrop.classList.add('open');
-    }, 700);
+    }, 550);
 }
 
 function closeModal() {
@@ -26,7 +26,7 @@ function closeModal() {
     setTimeout(function () {
         backdrop.style.display = 'none';
         modal.style.display = 'none';
-    }, 700);
+    }, 550);
 }
 
 function openMobileNav() {
@@ -37,7 +37,7 @@ function openMobileNav() {
     setTimeout(function () {
         mobileNav.classList.add('open');
         backdrop.classList.add('open');
-    }, 600);
+    }, 550);
 }
 
 function closeMobileNav() {
@@ -48,7 +48,7 @@ function closeMobileNav() {
     setTimeout(function () {
         backdrop.style.display = 'none';
         mobileNav.style.display = 'none';
-    }, 600);
+    }, 550);
 }
 
 // MODAL EVENT LISTENERS

@@ -60,15 +60,16 @@ body {
 .modal{
   text-align: center;
   position: fixed;
+  min-width: 98%;
+  top: 20%;
+  left: 1%;
+  right: 1%;
   display: none;
   opacity: 0;
-  transform: translateY(-20rem);
   transform-origin: center;
-  transition: opacity 700ms ease-in, transform 700ms ease-out;
-  /* transition: display ease-in, opacity 200ms ease-in 200ms, transform 300ms ease-out 200ms; */
+  transform: translateY(-100%);  
+  transition: opacity 550ms ease-out, transform 550ms ease-out;
   z-index: 200;
-  top: 20%;
-  left: 35%;
   /* width: 40%; */
   background: white;
   padding: 1.5rem;
@@ -113,6 +114,15 @@ body {
 .modal__action--negative:active{
   background: var(--highlight-light-red);
   border-color: var(--highlight-light-red);
+}
+
+@media (min-width: 40rem){
+  .modal{
+    min-width: 40%;
+    /* max-width: 10rem; */
+    left: 30%;
+    right: 30%;
+  }
 }
 
 /* ********************************** HEADER */
@@ -238,9 +248,7 @@ body {
 
   /* ANIMATION */
   .main-nav__item--cta{
-    /* animation: grab-attention 300ms linear 2.5s infinite alternate none; */
     animation: bounce 650ms ease-in 2.5s infinite alternate backwards;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   }
 
   .main-nav__item--cta a,
@@ -265,7 +273,7 @@ body {
   width: 70vw;
   height: 100vh;
   transform: translateX(-10rem);
-  transition: opacity 600ms ease-in-out, transform 600ms ease-in-out;
+  transition: opacity 550ms ease-out, transform 550ms ease-out;
 }
 
 .mobile-nav__items{
@@ -382,20 +390,6 @@ main{
 }
 
 /* ANIMATIONS */
-@keyframes grab-attention{
-  from{
-    transform: scale(1.05);
-  }
-
-  50%{
-    transform: scale(0.97);
-  }
-
-  to{
-    transform: scale(0.93);
-  }
-}
-
 @keyframes bounce{
   from{
     transform: translateY(-0.1rem);
